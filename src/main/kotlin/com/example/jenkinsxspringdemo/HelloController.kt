@@ -1,13 +1,16 @@
 package com.example.jenkinsxspringdemo
 
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.RestController
 
 @RestController
-public class HelloController {
+class GreetingController {
 
-    @RequestMapping("/")
-    public String index() {
-        return "Greetings from Spring Boot!";
-    }
+ @GetMapping("/hello/{name}")
+ fun get(@PathVariable name: String) = "Hello, $name"
+
+ @GetMapping("/}")
+ fun get(@PathVariable name: String) = "Hello, world"
+
 }
