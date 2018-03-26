@@ -10,7 +10,3 @@ class DemoApplication
 fun main(args: Array<String>) {
     runApplication<DemoApplication>(*args)
 }
-
-@RequestMapping("/")
-fun home() = "Hello world"
-

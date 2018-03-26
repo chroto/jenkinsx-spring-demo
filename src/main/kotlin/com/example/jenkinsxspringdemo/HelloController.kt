@@ -5,9 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class GreetingController {
+class GreetingController
 
  @GetMapping("/hello/{name}")
  fun getHello(@PathVariable name: String) = "Hello, $name"
-
-}
