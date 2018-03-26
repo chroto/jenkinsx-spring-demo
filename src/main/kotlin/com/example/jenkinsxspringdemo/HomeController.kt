@@ -1,7 +1,7 @@
 package com.example.jenkinsxspringdemo
 
 import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.Controller
+import org.springframework.stereotype.Controller
 
 @Controller
 class HomeController
