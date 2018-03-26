@@ -10,7 +10,4 @@ class GreetingController {
  @GetMapping("/hello/{name}")
  fun getHello(@PathVariable name: String) = "Hello, $name"
 
- @GetMapping("/")
- fun getRoot(@PathVariable name: String) = "Hello, world"
-
 }
